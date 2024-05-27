@@ -55,7 +55,7 @@ class Comments extends Component {
   onAddComment = event => {
     event.preventDefault()
     const {nameInput, commentInput} = this.state
-    const initialContainerBackgroundClassNames = `initial-container ${
+    const initialContainerBackground = `initial-container ${
       initialContainerBackgroundClassNames[
         Math.ceil(
           Math.random() * initialContainerBackgroundClassNames.length - 1,
@@ -68,7 +68,7 @@ class Comments extends Component {
       comment: commentInput,
       date: new Date(),
       isLiked: false,
-      initialClassName: initialContainerBackgroundClassNames,
+      initialClassName: initialContainerBackground,
     }
 
     this.setState(prevState => ({
