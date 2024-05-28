@@ -40,7 +40,7 @@ class Comments extends Component {
     }))
   }
 
-  renderCommentsList = () => {
+  render CommentsList = () => {
     const {commentsList} = this.state
     return commentsList.map(eachComment => (
       <CommentItem
@@ -91,7 +91,7 @@ class Comments extends Component {
   }
 
   render() {
-    const {nameInput, commentInput, commentDetails} = this.state
+    const {nameInput, commentInput, commentDetails, commentsList} = this.state
 
     return (
       <div className="app-container">
